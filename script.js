@@ -36,21 +36,13 @@ const fs = require('fs');
 //     }   
 // })
 
-fs.copyFile("Shrestha.txt","./MyFile/Dipesh.txt",(err) =>{
-    if(err){
-        console.error("Error copying file:", err);
-    }
-    else{
-        console.log("File copied successfully");
-    }
-})
-
-// fs.unlink("Hello.txt", function(err){
-//     if(err){
-//         console.error("Error deleting file:", err);
-//     }
-//     else{
-//         console.log("File deleted successfully");
-//     }
+// fs.copyFile("Shrestha.txt","./MyFile/Dipesh.txt",(err) =>{
+//     if(err) console.error("Error copying file:", err);
+//     else console.log("File copied successfully");
 // })
+
+fs.unlink("Shrestha.txt", (err) =>{
+    if(err) console.error("Error deleting file:", err);
+    else console.log("File deleted successfully");
+})
 
