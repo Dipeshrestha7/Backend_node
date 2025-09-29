@@ -41,8 +41,15 @@ const fs = require('fs');
 //     else console.log("File copied successfully");
 // })
 
-fs.unlink("Shrestha.txt", (err) =>{
-    if(err) console.error("Error deleting file:", err);
-    else console.log("File deleted successfully");
-})
+// fs.unlink("Shrestha.txt", (err) =>{
+//     if(err) console.error("Error deleting file:", err);
+//     else console.log("File deleted successfully");
+// })
+  
+// fs.rm("./Copy", {recursive: true},(err) =>{
+//     if(err) console.error("Error deleting directory:", err);
+//     else console.log("Directory deleted successfully");
+// })
+
+
 
