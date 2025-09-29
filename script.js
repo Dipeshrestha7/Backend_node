@@ -6,25 +6,25 @@ const fs = require('fs');
 // rename
 // unlink
 
-fs.writeFile("Dipesh.txt", "This is my first file", (err)=>{
-    console.log("File created successfully");
-    if(err){
-        console.error("Error writing file:", err);
-    }
-    else{
-        console.log("File written successfully");
-    }
-})
-
-
-// fs.appendFile("Hey.txt", "What a great file brother", function(err){
+// fs.writeFile("Dipesh.txt", "This is my first file", (err)=>{
+//     console.log("File created successfully");
 //     if(err){
 //         console.error("Error writing file:", err);
 //     }
 //     else{
-//         console.log("File appened successfully");
+//         console.log("File written successfully");
 //     }
 // })
+
+
+fs.appendFile("Dipesh.txt", " What a great file brother", function(err){
+    if(err){
+        console.error("Error writing file:", err);
+    }
+    else{
+        console.log("File appened successfully");
+    }
+})
 
 
 // fs.rename("Hey.txt","Hello.txt", function(err){
