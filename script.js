@@ -27,23 +27,23 @@ const fs = require('fs');
 // })
 
 
-fs.rename("Dipesh.txt","Shrestha.txt", function(err){
-    if(err){
-        console.error("Error renaming file:", err);
-    }
-    else{
-        console.log("File renamed successfully");
-    }   
-})
-
-//  fs.copyFile("Hello.txt","./Copy/copy.txt",function(err){
+// fs.rename("Dipesh.txt","Shrestha.txt", function(err){
 //     if(err){
-//         console.error("Error copying file:", err);
+//         console.error("Error renaming file:", err);
 //     }
 //     else{
-//         console.log("File copied successfully");
-//     }
-//  })
+//         console.log("File renamed successfully");
+//     }   
+// })
+
+fs.copyFile("Shrestha.txt","./MyFile/Dipesh.txt",(err) =>{
+    if(err){
+        console.error("Error copying file:", err);
+    }
+    else{
+        console.log("File copied successfully");
+    }
+})
 
 // fs.unlink("Hello.txt", function(err){
 //     if(err){
