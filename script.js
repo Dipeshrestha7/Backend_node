@@ -17,24 +17,24 @@ const fs = require('fs');
 // })
 
 
-fs.appendFile("Dipesh.txt", " What a great file brother", function(err){
-    if(err){
-        console.error("Error writing file:", err);
-    }
-    else{
-        console.log("File appened successfully");
-    }
-})
-
-
-// fs.rename("Hey.txt","Hello.txt", function(err){
+// fs.appendFile("Dipesh.txt", " What a great file brother", function(err){
 //     if(err){
-//         console.error("Error renaming file:", err);
+//         console.error("Error writing file:", err);
 //     }
 //     else{
-//         console.log("File renamed successfully");
-//     }   
+//         console.log("File appened successfully");
+//     }
 // })
+
+
+fs.rename("Dipesh.txt","Shrestha.txt", function(err){
+    if(err){
+        console.error("Error renaming file:", err);
+    }
+    else{
+        console.log("File renamed successfully");
+    }   
+})
 
 //  fs.copyFile("Hello.txt","./Copy/copy.txt",function(err){
 //     if(err){
